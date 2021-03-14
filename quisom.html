@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sintesi Nazar</title>
+    <link rel="stylesheet" href="style-quisom.css" />
+</head>
+
+<body>
+
+    <div class="menu">
+        <header>
+            <ul>
+                <li><a id="inici" href="index.html">Inici</a></li>
+                <li class="dropdown">
+                    <a id="quisom" href="quisom.html" class="dropbtn">Qui som?</a>
+
+                </li>
+                <li><a id="quefem" href="quefem.html">Que fem?</a></li>
+                <li class="dropdown">
+                    <a id="especialitats" class="dropbtn">Especialitats</a>
+                    <div class="dropdown-content">
+                        <a href="cursos.html">Cursos</a>
+
+                    </div>
+                </li>
+                <li><a id="contacte" href="contacte.html">Contacte</a></li>
+                <li><a id="logo"><img alt="imatge" src="img/logo.png" width="120"></a></li>
+            </ul>
+        </header>
+        <article>
+            <div class="quisom1">
+                <p>Desde su creación en 2003, N inf company se ha convertido en tu tienda de informática de referencia en Barcelona. Actualmente disponemos de dos espacios ubicados en la calle Sepúlveda donde encontrarás productos de los fabricantes más relevantes a nivel mundial. En ellos, nuestro equipo especializado te asesorará de forma personalizada para que siempre adquieras el producto que más se ajuste a tus necesidades. Así mismo, en nuestra tienda online disfrutarás del mismo compromiso pero con la comodidad de una compra por internet... ¡un clic y directo a casa! Y es que en Neobyte trabajamos con stock real, lo que garantiza el envío inmediato de tu pedido desde nuestro almacén a las pocas horas de haberlo realizado.</p>
+            </div>
+            <div class="imatges">
+
+                <img class="imatges1" alt="imatge" src="imgquisom/tenda1.jpg" width="400" />
+                <img class="imatges1" alt="imatge" src="imgquisom/tenda2.jpg" width="400" />
+                <img class="imatges1" src="imgquisom/tenda3.jpg" width="400" alt="imatge" />
+            </div>
+            <div class="sponsors">
+                <p> Partners
+                    El largo camino que llevamos recorrido nos ha valido para hacer buenas amistades dentro del sector. En nuestro catálogo, siempre en crecimiento, disponemos de primeras marcas y contamos con un reconocimiento que nos ha valido ser Microsoft Partner, Intel IPI, Asus Golden Partner y punto de venta oficial de fabricantes como Gigabyte, MSI, Arctic Cooling, Corsair, Samsung, Genesis, Tp-Link, Acer, Toshiba, CoolerMaster, Lenovo, etc.</p>
+                <img class="imatges1" alt="imatge" src="imgquisom/sponsrs.png" width="800" />
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ighZNeeHJsM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p>Soluciones informáticas
+                    Esto de la informática no es nuevo para nosotros, por lo que nuestra experiencia en el sector y nuestro conocimiento del producto son un valor añadido para nuestros clientes. En Neobyte nos dedicamos a la venta de ordenadores, todo tipo de componentes, monitores, impresoras, smartphones, etc. Además, somos especialistas en gaming, una pasión que nos mueve a estar siempre a la última en portátiles, PC’s, auriculares, ratones y teclados para jugar.
+
+                    Por otro lado, ponemos a tu disposición nuestro servicio técnico propio: un equipo especializado dedicado a la reparación y montaje de todo tipo de hardware y software y que te asesorará sin problemas ante cualquier duda que tengas. Y si eres de los que buscan el ordenador que quede como anillo al dedo, te alegrará saber que somos expertos en la personalización de PC’s a medida, tanto para entorno profesional como doméstico, con componentes de las principales marcas y nuestro compromiso por el trabajo bien hecho.
+
+                    Igualmente, disponemos de un departamento de mantenimiento a empresas a nivel presencial, telefónico y/o remoto, preparado para solventar las incidencias que puedas tener en tu negocio.
+
+                    A nivel educacional, ofrecemos tarificaciones especiales para centros educativos, con un amplio catálogo de portátiles, ordenadores de sobremesa, tablets, proyectores, etc. dirigidos a colegios, institutos y otros centros docentes.</p>
+
+                <div class="w3-content" style="max-width:800px">
+                    <div class="mySlides"> <img src="imgquisom/friki3.jpg" width="200" alt="imatge">
+                        <p> Sempre trobara el fallo en la teva màquina</p>
+                    </div>
+                    <div class="mySlides"> <img src="imgquisom/friki2.jpg" width="224" alt="imatge">
+                        <p> El millor en instal·lacions de xarxa, configuració de xarxa.</p>
+                    </div>
+                    <div class="mySlides"> <img alt="imatge" src="imgquisom/friki.jpg" width="400">
+                        <p> Hacker</p>
+                    </div>
+                </div>
+
+                <div class="w3-center">
+                    <div class="w3-section">
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+                        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+                    </div>
+                    <button class="w3-button demo" onclick="currentDiv(1)"><img src="imgquisom/friki3.jpg"  alt="imatge"  width="30"></button>
+                    <button class="w3-button demo" onclick="currentDiv(2)"><img src="imgquisom/friki2.jpg"  alt="imatge"  width="33"></button>
+                    <button class="w3-button demo" onclick="currentDiv(3)"><img src="imgquisom/friki.jpg" alt="imatge" width="60"></button>
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showDivs(slideIndex);
+
+                    function plusDivs(n) {
+                        showDivs(slideIndex += n);
+                    }
+
+                    function currentDiv(n) {
+                        showDivs(slideIndex = n);
+                    }
+
+                    function showDivs(n) {
+                        var i;
+                        var x = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("demo");
+                        if (n > x.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = x.length
+                        }
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" w3-red", "");
+                        }
+                        x[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " w3-red";
+                    }
+
+                </script>
+
+            </div>
+
+        </article>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="index">Index</h4>
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="quisom.html">Qui som?</a></li>
+                        <li><a href="#">Especialitats</a></li>
+                        <li><a href="#">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicacio</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1666.5481358660527!2d1.1383430508380807!3d41.6400869525052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a69ed145bba279%3A0xafbb60cd111e20f3!2sInstitut%20Alfons%20Costafred!5e1!3m2!1ses!2ses!4v1615698912002!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-col">
+                    <h4>Pagines socials</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.es" target="_blank"><img src="img/facebook.png" alt="imatge" width="50"></a>
+                        <a href="https://twitter.com/twitter" target="_blank"><img src="img/twitter.png" width="50" alt="imatge" ></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" width="50" alt="imatge" ></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>política de
+                        privacitat</h4>
+                    <A HREF="export.pdf" target="_blank" class="pdf">Document PDF </A>
+                    <div class="contacte1">
+                        <a> Email: <br> N.INF.Company@gmail.com<br>Numero de telefon:<br>600600600</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>

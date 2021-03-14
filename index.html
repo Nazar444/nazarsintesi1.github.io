@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Sintesi Nazar</title>
+    <link rel="stylesheet" href="style-index.css" />
+</head>
+
+<body>
+
+    <div class="menu">
+
+        <header>
+            <ul>
+                <li><a id="inici" href="index.html">Inici</a></li>
+                <li class="dropdown">
+                    <a id="quisom" href="quisom.html" class="dropbtn">Qui som?</a>
+                    
+                </li>
+                <li><a id="quefem" href="quefem.html">Que fem?</a></li>
+                <li class="dropdown">
+                    <a id="especialitats" class="dropbtn">Especialitats</a>
+                    <div class="dropdown-content">
+                        <a href="cursos.html">Cursos</a>
+
+                    </div>
+                </li>
+                <li><a id="contacte" href="contacte.html">Contacte</a></li>
+                <li><a id="logo"><img src="img/logo.png" alt="imatge" width="120"></a></li>
+            </ul>
+        </header>
+        <article>
+
+            
+            
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img/tenda1.png"  alt="imatge" width="1000">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img/tenda2.png"  alt="imatge"  width="1000">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img/tenda3.png"  alt="imatge"  width="1000">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); 
+}
+</script>
+
+
+
+
+
+
+
+
+        </article>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4 class="index">Index</h4>
+                    <ul>
+                        <li><a href="index.html">Inici</a></li>
+                        <li><a href="quisom.html">Qui som?</a></li>
+                        <li><a href="#">Especialitats</a></li>
+                        <li><a href="#">Contacte</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Ubicacio</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1666.5481358660527!2d1.1383430508380807!3d41.6400869525052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a69ed145bba279%3A0xafbb60cd111e20f3!2sInstitut%20Alfons%20Costafred!5e1!3m2!1ses!2ses!4v1615698912002!5m2!1ses!2ses" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-col">
+                    <h4>Pagines socials</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.es"  alt="imatge"  target="_blank"><img src="img/facebook.png" width="50"></a>
+                        <a href="https://twitter.com/twitter" target="_blank"><img src="img/twitter.png" width="50"  alt="imatge"  ></a>
+                        <a href="https://www.instagram.com" target="_blank"><img  alt="imatge"  src="img/instagram.png" width="50"></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>política de
+                        privacitat</h4>
+                    <A HREF="export.pdf" target="_blank" class="pdf">Document PDF </A>
+                    <div class="contacte1">
+                        <a> Email: <br> N.INF.Company@gmail.com<br>Numero de telefon:<br>600600600</a>
+                </div>
+            </div>
+        </div>
+
